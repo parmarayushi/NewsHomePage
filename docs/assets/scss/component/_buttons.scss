@@ -1,0 +1,8 @@
+.read-more-button {
+    letter-spacing: 4px;
+    background-color: $danger;
+
+    &:hover {
+        background-color: $secondary;
+    }
+}
