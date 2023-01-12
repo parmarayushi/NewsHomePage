@@ -1,0 +1,13 @@
+.card-header {
+    color: white;
+
+    &:hover {
+        color: $warning;
+    }
+}
+
+.text-header {
+    &:hover {
+        color: $danger;
+    }
+}

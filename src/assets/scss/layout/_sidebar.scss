@@ -1,0 +1,28 @@
+.sidebar {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background: white;
+    bottom: 0;
+    right: 0;
+    transform: translateX(100%);
+}
+
+#menu {
+    ~.backdrop {
+        display: none;
+        background: #00000073;
+        @include position(absolute, 0, 0, 0, 0);
+    }
+
+    &:checked {
+        ~.sidebar {
+            transform: translateX(0);
+        }
+
+        ~.backdrop {
+            display: block;
+        }
+    }
+}
